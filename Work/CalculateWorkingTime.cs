@@ -23,11 +23,11 @@ namespace Work
 
             if (sumMinutes < 10)
             {
-                endTime = hours + debitWorkingHours + ":" + sumMinutes;
+                endTime = hours + debitWorkingHours + ":0" + sumMinutes;
             }
             else if(sumMinutes >=10 && sumMinutes < 60)
             {
-                endTime = hours + debitWorkingHours + ":0" + sumMinutes;
+                endTime = hours + debitWorkingHours + ":" + sumMinutes;
             }
             else
             {
