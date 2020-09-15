@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Work</name>
+    </assembly>
+    <members>
+        <member name="T:Work.CalculateWorkingTime">
+            <summary>Responsible for calculating the end time.</summary>
+        </member>
+        <member name="M:Work.CalculateWorkingTime.EndTime(System.Int32,System.Int32,System.Int32)">
+            <summary>Calculate the end time.</summary>
+            <param name="hours">The hours in your start time as integer</param>
+            <param name="minutes">The minutes in your start time as integer</param>
+            <param name="pause">Duration of pause as integer</param>
+            <returns>The end time in format HH:MM.</returns>
+        </member>
+        <member name="M:Work.CalculateWorkingTime.Hours(System.String)">
+            <summary>Extracts the hours of a specified time.</summary>
+            <param name="time">The start time.</param>
+            <returns>The hours in your start time as integer.</returns>
+        </member>
+        <member name="M:Work.CalculateWorkingTime.Minutes(System.String)">
+            <summary>Extracts the minutes of a specified time.</summary>
+            <param name="time">The start time.</param>
+            <returns>The minutes in your start time as integer.</returns>
+        </member>
+        <member name="T:Work.MainWorkingTime">
+            <summary>Implements Logging class.</summary>
+            <seealso cref="T:Work.WorkLogging" />
+        </member>
+        <member name="M:Work.MainWorkingTime.Main(System.String[])">
+            <summary>Defines the entry point of the application.</summary>
+            <param name="args">The arguments.</param>
+            <exception cref="T:System.ArgumentNullException">args</exception>
+        </member>
+        <member name="T:Work.SaveWorkingTime">
+            <summary>Responsible for saving data to a file.</summary>
+        </member>
+        <member name="M:Work.SaveWorkingTime.SaveToFile(System.String,System.String,System.String,System.Int32)">
+            <summary>Saves to file.</summary>
+            <param name="storageLocation">The storage location.</param>
+            <param name="startTime">The start time.</param>
+            <param name="endTime">The end time.</param>
+            <param name="pause">Duration of pause.</param>
+        </member>
+        <member name="T:Work.WorkLogging">
+            <summary>Responsible for logging.</summary>
+        </member>
+        <member name="M:Work.WorkLogging.LogInfo(System.String)">
+            <summary>Logs the information.</summary>
+            <param name="text">The information message.</param>
+        </member>
+        <member name="M:Work.WorkLogging.LogException(System.String)">
+            <summary>Logs the exception.</summary>
+            <param name="text">The text.</param>
+        </member>
+    </members>
+</doc>
